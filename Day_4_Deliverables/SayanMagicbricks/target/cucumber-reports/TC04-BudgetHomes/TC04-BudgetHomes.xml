@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.256" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-03-26T10:22:11.328570900Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly" time="14.938">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42ed3494964ce6b92bd952d39bc7b0f5, isElementDisplayed {id=f.B5867263A092FB5E192FED6E29200F81.d.B7DCD76DD9D49EA8EE28B55CC3E55F04.e.160}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58743}, goog:processID: 27044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58743/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (42ed3494964ce6b92bd952d39bc7b0f5)] -&gt; xpath: //div[@class='mb-srp__list']]
+Session ID: 42ed3494964ce6b92bd952d39bc7b0f5">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [42ed3494964ce6b92bd952d39bc7b0f5, isElementDisplayed {id=f.B5867263A092FB5E192FED6E29200F81.d.B7DCD76DD9D49EA8EE28B55CC3E55F04.e.160}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58743}, goog:processID: 27044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58743/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (42ed3494964ce6b92bd952d39bc7b0f5)] -> xpath: //div[@class='mb-srp__list']]
+Session ID: 42ed3494964ce6b92bd952d39bc7b0f5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:222)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Pages.BasePage.waitAllVisible(BasePage.java:58)
+	at Pages.BudgetHomesPage.getPropertyList(BudgetHomesPage.java:25)
+	at stepDefinitions.MagicBricksStepDefinitions.theFirst5PropertyPricesShouldBeDisplayed(MagicBricksStepDefinitions.java:114)
+	at ✽.the first 5 property prices should be displayed(file:///F:/BDD_Sprint/SayanMagicbricks/src/test/resources/features/MagicBricks.feature:17)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Budget Homes"..........................................passed
+And the user switches to the new tab........................................passed
+Then the first 5 property prices should be displayed........................failed
+When the user clicks on the first property listing..........................skipped
+And the user switches to the property detail tab............................skipped
+And the user clicks the Apply Loan button...................................skipped
+And the user switches to the loan calculator tab............................skipped
+And the user enters loan amount "30,00,000" and interest rate "7.5".........skipped
+And the user selects property not finalized radio button....................skipped
+And the user clicks Calculate EMI...........................................skipped
+Then the EMI details should be displayed....................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

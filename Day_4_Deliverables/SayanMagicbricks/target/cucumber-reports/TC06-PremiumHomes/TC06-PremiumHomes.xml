@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.387" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-03-26T10:23:03.744630800Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC06 - Premium Homes listings are displayed and image gallery navigates correctly" time="19.051">
+<failure type="org.openqa.selenium.StaleElementReferenceException" message="stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d303773e1a3f3495e21497a1311419d, isElementDisplayed {id=f.E8D8F8F59C1179C5F680ADC074F957BB.d.5B0E5D719B813E9C43885CF495C4C5B1.e.485}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51789}, goog:processID: 17124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51789/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d303773e1a3f3495e21497a1311419d)] -&gt; xpath: //div[@class='mb-srp__card']]
+Session ID: 4d303773e1a3f3495e21497a1311419d">
+<![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d303773e1a3f3495e21497a1311419d, isElementDisplayed {id=f.E8D8F8F59C1179C5F680ADC074F957BB.d.5B0E5D719B813E9C43885CF495C4C5B1.e.485}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\sayan\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51789}, goog:processID: 17124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51789/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d303773e1a3f3495e21497a1311419d)] -> xpath: //div[@class='mb-srp__card']]
+Session ID: 4d303773e1a3f3495e21497a1311419d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:282)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:227)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:222)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Pages.BasePage.waitAllVisible(BasePage.java:58)
+	at Pages.PremiumHomesPage.openFirstPropertyImageGallery(PremiumHomesPage.java:28)
+	at stepDefinitions.MagicBricksStepDefinitions.theUserOpensTheImageGalleryOfTheFirstProperty(MagicBricksStepDefinitions.java:199)
+	at ✽.the user opens the image gallery of the first property(file:///F:/BDD_Sprint/SayanMagicbricks/src/test/resources/features/MagicBricks.feature:36)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Premium Homes".........................................passed
+And the user switches to the new tab........................................passed
+And the user clicks the search button.......................................passed
+And the user opens the image gallery of the first property..................failed
+And the user clicks the Project Photo tab...................................skipped
+Then the user should be able to navigate right through 3 gallery images.....skipped
+]]></system-out>
+</testcase>
+</testsuite>

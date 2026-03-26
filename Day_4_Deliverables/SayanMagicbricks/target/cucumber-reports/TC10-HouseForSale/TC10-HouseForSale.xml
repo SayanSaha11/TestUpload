@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.573" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-03-26T17:54:20.342695200Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC10 - House for Sale listings shown and Map View renders property location correctly" time="0.277">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.getWindowHandle()&quot; because the return value of &quot;utils.DriverManager.getDriver()&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getWindowHandle()" because the return value of "utils.DriverManager.getDriver()" is null
+	at stepDefinitions.MagicBricksStepDefinitions.the_user_is_on_the_MagicBricks_Mumbai_residential_page(MagicBricksStepDefinitions.java:45)
+	at ✽.the user is on the MagicBricks Mumbai residential page(file:///F:/BDD_Sprint/SayanMagicbricks/src/test/resources/features/MagicBricks.feature:7)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................failed
+When the user clicks the Buy heading........................................skipped
+And the user clicks "House for sale in Mumbai"..............................skipped
+And the user switches to the new tab........................................skipped
+And the user clicks on the specific house property..........................skipped
+And the user switches to the house detail tab...............................skipped
+And the user scrolls down by 1500 pixels....................................skipped
+And the user clicks About Locality tab......................................skipped
+And the user scrolls up by 100 pixels.......................................skipped
+And the user clicks Explore Locality........................................skipped
+And the user switches to the locality tab...................................skipped
+And the user clicks the map view button.....................................skipped
+Then the map should be displayed with the property marked...................skipped
+]]></system-out>
+</testcase>
+</testsuite>

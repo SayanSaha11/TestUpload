@@ -1,0 +1,33 @@
+
+<!DOCTYPE suite>
+<suite name="MagicBricks Full Suite" verbose="1" thread-count="1" parallel="none">
+
+  <test name="TC04-BudgetHomes">
+    <classes><class name="runners.RunTC04Test"/></classes>
+  </test>
+
+  <test name="TC06-PremiumHomes">
+    <classes><class name="runners.RunTC06Test"/></classes>
+  </test>
+
+  <test name="TC07-NewProjects">
+    <classes><class name="runners.RunTC07Test"/></classes>
+  </test>
+
+  <test name="TC10-HouseForSale">
+    <classes><class name="runners.RunTC10Test"/></classes>
+  </test>
+
+  <test name="TC12-ResidentialPlots">
+    <classes><class name="runners.RunTC12Test"/></classes>
+  </test>
+
+  <test name="TC14-OfficeSpace">
+    <classes><class name="runners.RunTC14Test"/></classes>
+  </test>
+
+  <test name="TC16-CommercialSpace">
+    <classes><class name="runners.RunTC16Test"/></classes>
+  </test>
+
+</suite>
