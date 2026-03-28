@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="29.69" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:48:30.894027200Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC14 - Office Space listings are shown and Contact Agent button is clickable" time="29.636">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Office Space in Mumbai"................................passed
+And the user switches to the new tab........................................passed
+And the user clicks on the first office property............................passed
+And the user switches to the office detail tab..............................passed
+And the user clicks Contact Agent...........................................passed
+Then the Contact Agent action should be completed...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

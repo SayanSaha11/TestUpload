@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="20.477" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:49:00.737456300Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC16 - Commercial Space supports sub-type filter and sort by price high to low" time="20.437">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Commercial Space in Mumbai"............................passed
+And the user switches to the new tab........................................passed
+And the user clicks the Business Type filter................................passed
+And the user selects the first business sub-type option.....................passed
+And the user clicks the sort dropdown.......................................passed
+And the user selects "Price - High to Low" sort option......................passed
+Then the prices of the first 5 commercial properties should be displayed....passed
+]]></system-out>
+</testcase>
+</testsuite>

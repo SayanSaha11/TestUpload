@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-28T20:57:12 IST" name="MagicBricks Cross-Browser Suite" finished-at="2026-03-28T21:00:45 IST" duration-ms="212495">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-03-28T20:57:12 IST" name="Edge-Suite" finished-at="2026-03-28T21:00:31 IST" duration-ms="198767">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:57:12 IST" name="setUpClass" finished-at="2026-03-28T20:57:13 IST" duration-ms="1064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4fb3ee4e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setBrowserFromXml(java.lang.String)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:57:13 IST" name="setBrowserFromXml" finished-at="2026-03-28T20:57:13 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserFromXml -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:57:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:57:41 IST" duration-ms="27754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:57:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:57:58 IST" duration-ms="17353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC06 - Premium Homes listings are displayed and image gallery navigates correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:57:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:58:32 IST" duration-ms="33704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC07 - New Projects display mandatory fields and enquiry form submits successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:58:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:58:55 IST" duration-ms="23087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC10 - House for Sale listings shown and Map View renders property location correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:58:55 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:59:53 IST" duration-ms="57726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC12 - Plot listings have no BHK filter and area budget filter works correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T20:59:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:00:16 IST" duration-ms="22918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC14 - Office Space listings are shown and Contact Agent button is clickable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T21:00:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:00:30 IST" duration-ms="14493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC16 - Commercial Space supports sub-type filter and sort by price high to low"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@77eca502]" started-at="2026-03-28T21:00:30 IST" name="tearDownClass" finished-at="2026-03-28T21:00:31 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Edge-Suite -->
+    <test started-at="2026-03-28T20:57:12 IST" name="Chrome-Suite" finished-at="2026-03-28T21:00:45 IST" duration-ms="212495">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:57:12 IST" name="setUpClass" finished-at="2026-03-28T20:57:13 IST" duration-ms="1057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@f5acb9d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setBrowserFromXml(java.lang.String)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:57:13 IST" name="setBrowserFromXml" finished-at="2026-03-28T20:57:13 IST" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserFromXml -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:57:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:57:39 IST" duration-ms="25927" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:57:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:58:00 IST" duration-ms="21226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC06 - Premium Homes listings are displayed and image gallery navigates correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:58:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:58:31 IST" duration-ms="30610" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC07 - New Projects display mandatory fields and enquiry form submits successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:58:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T20:59:07 IST" duration-ms="35749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC10 - House for Sale listings shown and Map View renders property location correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T20:59:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:00:04 IST" duration-ms="57231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC12 - Plot listings have no BHK filter and area budget filter works correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T21:00:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:00:29 IST" duration-ms="24767" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC14 - Office Space listings are shown and Contact Agent button is clickable"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T21:00:29 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-03-28T21:00:45 IST" duration-ms="15747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["TC16 - Commercial Space supports sub-type filter and sort by price high to low"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["MagicBricks Buy Module Functional Validation"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@50caa560]" started-at="2026-03-28T21:00:45 IST" name="tearDownClass" finished-at="2026-03-28T21:00:45 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Chrome-Suite -->
+  </suite> <!-- MagicBricks Cross-Browser Suite -->
+</testng-results>

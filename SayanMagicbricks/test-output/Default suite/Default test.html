@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 28 14:40:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>2 seconds (2462 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC14 - Office Space listings are shown and Contact Agent button is clickable", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-6]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace233604302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace233604302'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-6]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC06 - Premium Homes listings are displayed and image gallery navigates correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-2]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace915346893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace915346893'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-2]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-1]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1857043911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1857043911'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-1]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC12 - Plot listings have no BHK filter and area budget filter works correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-5]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace717230695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace717230695'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-5]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC16 - Commercial Space supports sub-type filter and sort by price high to low", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-7]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1860975444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860975444'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-7]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC07 - New Projects display mandatory fields and enquiry form submits successfully", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-3]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2110861371", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2110861371'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-3]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TC10 - House for Sale listings shown and Map View renders property location correctly", "MagicBricks Buy Module Functional Validation"</td>
+<td><div><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-4]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1719937130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719937130'><pre>java.lang.IllegalStateException: WebDriver not initialised for thread [TestNG-PoolService-4]. Ensure DriverManager.initDriver() is called in Hooks.@Before.
+	at utils.DriverManager.getDriver(DriverManager.java:207)
+	at stepDefinitions.MagicBricksStepDefinitions.initPageObjects(MagicBricksStepDefinitions.java:84)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@3f56875e</td></tr>
+</table><p>
+</body>
+</html>

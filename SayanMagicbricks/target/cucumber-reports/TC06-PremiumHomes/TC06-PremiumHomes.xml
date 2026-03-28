@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.227" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:46:03.796281800Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC06 - Premium Homes listings are displayed and image gallery navigates correctly" time="23.133">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Premium Homes".........................................passed
+And the user switches to the new tab........................................passed
+And the user clicks the search button.......................................passed
+And the user opens the image gallery of the first property..................passed
+And the user clicks the Project Photo tab...................................passed
+Then the user should be able to navigate right through 3 gallery images.....passed
+]]></system-out>
+</testcase>
+</testsuite>

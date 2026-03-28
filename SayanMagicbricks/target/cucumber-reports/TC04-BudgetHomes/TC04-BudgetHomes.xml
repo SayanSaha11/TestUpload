@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="35.84" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:45:26.809106800Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC04 - Budget Homes listings display prices within ceiling and EMI Calculator computes correctly" time="35.04">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "Budget Homes"..........................................passed
+And the user switches to the new tab........................................passed
+Then the first 5 property prices should be displayed........................passed
+When the user clicks on the first property listing..........................passed
+And the user switches to the property detail tab............................passed
+And the user clicks the Apply Loan button...................................passed
+And the user switches to the loan calculator tab............................passed
+And the user enters loan amount "30,00,000" and interest rate "7.5".........passed
+And the user selects property not finalized radio button....................passed
+And the user clicks Calculate EMI...........................................passed
+Then the EMI details should be displayed....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

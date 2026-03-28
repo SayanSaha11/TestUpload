@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <documentTitle>MagicBricks Automation Report</documentTitle>
+        <reportName>MagicBricks – Buy Module BDD Test Report</reportName>
+        <theme>STANDARD</theme>
+        <encoding>UTF-8</encoding>
+        <timeStampFormat>dd MMM yyyy HH:mm:ss</timeStampFormat>
+    </configuration>
+</extentreports>

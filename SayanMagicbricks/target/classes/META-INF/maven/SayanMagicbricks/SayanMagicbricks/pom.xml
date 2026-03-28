@@ -1,0 +1,148 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>SayanMagicbricks</groupId>
+  <artifactId>SayanMagicbricks</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <dependencies>
+
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.38.0</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.2</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Cucumber -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-core</artifactId>
+      <version>7.28.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>7.28.2</version>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-testng</artifactId>
+      <version>7.28.2</version>
+    </dependency>
+
+    <!-- Logging -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.7</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- Apache POI (Excel) -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>5.2.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.5</version>
+    </dependency>
+
+    <!-- WebDriverManager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.7.0</version>
+    </dependency>
+
+    <!-- Extent Reports -->
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber7-adapter</artifactId>
+      <version>1.14.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>5.0.9</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+
+          <!--
+            FIX: "Reference to undefined variable browser"
+            ─────────────────────────────────────────────
+            maven-surefire-plugin filters TestNG XML files through Maven's
+            resource interpolation engine BEFORE passing them to TestNG.
+            Any value that looks like ${...} gets treated as a Maven property.
+
+            The TestNG <parameter name="browser" value="chrome"/> tags are
+            plain string literals — NOT Maven variables — but surefire was
+            still resolving the suite XML as a Maven resource template.
+
+            Solution: set suiteXmlFiles via the direct path (done below) and
+            disable surefire's internal variable substitution with
+            <useManifestOnlyJar>false</useManifestOnlyJar> +
+            <useSystemClassLoader>false</useSystemClassLoader>.
+            These two flags stop surefire from re-processing the TestNG XML.
+
+            The <parameter> value="browser" is a TestNG concept, not Maven —
+            it is handled entirely by TestRunnerCrossBrowser.@BeforeClass
+            via @Parameters("browser").
+          -->
+          <suiteXmlFiles>
+            <suiteXmlFile>testng-suites/testng-crossbrowser.xml</suiteXmlFile>
+          </suiteXmlFiles>
+
+          <testFailureIgnore>true</testFailureIgnore>
+
+          <!-- Prevents Maven from interpolating ${...} inside the TestNG XML -->
+          <useManifestOnlyJar>false</useManifestOnlyJar>
+          <useSystemClassLoader>false</useSystemClassLoader>
+
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.6.3</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>utils.ExcelDataGenerator</mainClass>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>

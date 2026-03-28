@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="62.225" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:47:28.518523700Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC12 - Plot listings have no BHK filter and area budget filter works correctly" time="62.176">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+Given the user navigates directly to Plot in Mumbai page....................passed
+Then the current filter spec should be displayed............................passed
+When the user clicks More Filters...........................................passed
+And the user selects minimum budget "500" from dropdown.....................passed
+And the user selects maximum budget "2000" from dropdown....................passed
+And the user clicks Apply Filters...........................................passed
+Then the updated filter spec should be displayed............................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="27.075" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:46:27.198088Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC07 - New Projects display mandatory fields and enquiry form submits successfully" time="27.018">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+Given the user navigates directly to New Projects Mumbai page...............passed
+Then the first 3 new project details should be displayed....................passed
+When the user clicks on the first new project...............................passed
+And the user switches to the project detail tab.............................passed
+And the user clicks Contact Seller..........................................passed
+And the user fills the enquiry form with name "Test User" email "testuser@gmail.com" and mobile "9123359056".passed
+And the user clicks Get Contact Details.....................................passed
+And the user selects the first top match....................................passed
+Then the contact button text should be displayed............................passed
+]]></system-out>
+</testcase>
+</testsuite>

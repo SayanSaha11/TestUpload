@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [MagicBricks Full Suite]">
+  <test thread-count="1" name="TC10-HouseForSale(failed)">
+    <classes>
+      <class name="runners.RunTC10Test">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- runners.RunTC10Test -->
+    </classes>
+  </test> <!-- TC10-HouseForSale(failed) -->
+</suite> <!-- Failed suite [MagicBricks Full Suite] -->

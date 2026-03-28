@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MagicBricks Cross-Browser Suite"
+       verbose="1"
+       parallel="tests"
+       thread-count="2" data-provider-thread-count="1">
+
+ 
+  <test name="Chrome-Suite">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="runners.TestRunner"/>
+    </classes>
+  </test>
+  
+  <test name="Edge-Suite">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="runners.TestRunner"/>
+    </classes>
+  </test>
+<!--
+  <test name="Firefox-Suite">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="runners.TestRunnerCrossBrowser"/>
+    </classes>
+  </test>
+-->
+</suite>

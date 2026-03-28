@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="33.934" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T04:46:54.425901400Z">
+<testcase classname="MagicBricks Buy Module Functional Validation" name="TC10 - House for Sale listings shown and Map View renders property location correctly" time="33.872">
+<system-out><![CDATA[
+Given the user is on the MagicBricks Mumbai residential page................passed
+When the user clicks the Buy heading........................................passed
+And the user clicks "House for sale in Mumbai"..............................passed
+And the user switches to the new tab........................................passed
+And the user clicks on the specific house property..........................passed
+And the user switches to the house detail tab...............................passed
+And the user scrolls down by 1500 pixels....................................passed
+And the user clicks About Locality tab......................................passed
+And the user scrolls up by 100 pixels.......................................passed
+And the user clicks Explore Locality........................................passed
+And the user switches to the locality tab...................................passed
+And the user clicks the map view button.....................................passed
+Then the map should be displayed with the property marked...................passed
+]]></system-out>
+</testcase>
+</testsuite>
